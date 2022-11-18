@@ -83,7 +83,7 @@ while (number < 10){
 }
 }
 
-test(); */
+test(); */ 
 
 /* EXERCICE 2 */
 
@@ -138,20 +138,20 @@ personne("FERREIRA ALVES", "Steven", "21") */
 
 /* EXERCICE 7 */
 
-/* function personne(age, genre){
-    if (age >= 18 || genre == "homme"){
-        console.log("Vous êtes un homme et vous êtes majeur")
-    } else if(age < 18 || genre == "homme"){
-        console.log("Vous êtes un homme est vous êtes mineur")
-    } else if (age >= 18 || genre == "femme"){
-        console.log("Vous êtes une femme est vous êtes majeur")
-    } else {
-        console.log("Vous êtes une femme est vous êtes mineur")
-    }
-    return personne
-} 
+//  function personne(age, genre){
+//     if (age >= 18 && genre == "homme"){
+//         console.log("Vous êtes un homme et vous êtes majeur")
+//     } else if(age < 18 && genre == "homme"){
+//         console.log("Vous êtes un homme et vous êtes mineur")
+//     } else if (age >= 18 && genre == "femme"){
+//         console.log("Vous êtes une femme et vous êtes majeur")
+//     } else {
+//         console.log("Vous êtes une femme et vous êtes mineur")
+//     }
+//     return personne
+// } 
 
-personne(16, "femme") */
+// personne(16, "femme") 
 
 /* EXERCICE 8*/
 
@@ -183,4 +183,30 @@ mois[7] = "Août";
 
 /* EXERCICE 5 */
 
+let region = {"Aisne" : 02, "Nord" : 59, "Oise": 60, "Pas-de-Calais": 62, "Somme": 80 }
+console.log(region)
 
+/* EXERCICE 6 */
+
+console.log(region[59])
+
+/* EXERCICE 7 */
+
+region["Marne"]=51;
+console.log(region);
+
+/* EXERCICE 8 */
+
+for(let i = 0; i < mois.length; i++) {
+	console.log(mois[i]);	
+}
+
+/* EXERCICE 9 */
+console.log(region)
+
+/* EXERCICE 10 */
+
+for(var key in region){
+  var value = region[key]; 
+  console.log("Le département " +  key+ " a le numéro " + value);
+}
